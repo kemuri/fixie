@@ -1,0 +1,146 @@
+/*
+ * fixie.css
+ * http://github.com/gridurl
+ *
+ * A minimalistic CSS/HTML/PSD framework to fasten website development.
+ * 
+ * Written by Vince Pataky, k3 interactive
+ * Based on Jon Gibbins #hashgrid (http://github.com/dotjay/hashgrid) & Joni Korpis Less framework (http://lessframework.com)
+ *
+ * More info at k3frmwrk.k3i.hu
+*/
+
+/* @group Resets */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, figure, figcaption, hgroup, footer, header, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, figure, figure img, figcaption, hgroup,
+footer, header, nav, section {
+	display: block;
+}
+
+a img {border: 0;}
+
+figure {position: relative;}
+figure img {width: 100%;}
+
+/* @end */
+
+/* @group Font imports */
+
+/* @end */
+
+/* @group Typography presets */
+
+body {
+	font: 15px/18px Helvetica, Arial, sans-serif;
+	color: black;
+}
+
+/* @end */
+	
+/* @group Default rules */
+
+::selection 	 	{background: rgb(255,255,255); color: #262626;}
+::-moz-selection 	{background: rgb(255,255,255); color: #262626;}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+.test {
+	background-color: rgb(240,240,240);
+	color:  black;
+}
+
+/* @end */
+
+
+/* @group Desktop & tablet [landscape] */
+
+@media only screen and (min-width: 980px) {
+
+	body {
+		padding: 0px 20px 0;
+		width: 940px;
+		background: white;
+		color:black;
+		margin:0px auto; /* Center horizontally  */
+	}
+	
+}
+
+/* @end */
+
+/* @group Tablet [portrait] */
+
+@media only screen and (min-width: 768px) and (max-width: 979px)  {
+	
+	body {
+		/* 5 column grid
+		padding: 0px 80px 0;
+		width: 580px;
+		*/
+		
+		/* 12 column grid */
+		padding: 0px 20px 0;
+		width: 700px;
+		
+		background-color: rgb(255,230,230);
+		color:black;
+		margin:0px auto; /* Center horizontally */
+	}
+}
+
+/* @end */
+
+/* @group mobile [landscape] */
+
+@media only screen and (min-width: 480px) and (max-width: 767px)  {
+
+	body {
+		padding: 0px 10px 0;
+		width: 460px;
+		background-color: rgb(210,255,210);
+		color:white;
+		-webkit-text-size-adjust: 100%;
+		margin:0px auto; /* Center horizontally */
+	}
+
+}
+
+/* @end */
+
+/* @group mobile [portrait] */
+
+@media only screen and (max-width: 479px) {
+	
+	body {
+		padding: 0px 20px 0;
+		width: 280px;
+		background-color: rgb(230,230,255);
+		color:white;
+		-webkit-text-size-adjust: 100%;
+		margin:0px auto; /* Center horizontally */
+	}
+	
+}
+
+/* @end */
+
+/* @group Retina Display rules */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	
+}
+
+/* @end */
+
